@@ -1,0 +1,53 @@
+.projects {
+    padding: 100px 0px;
+    &__title {
+        padding-bottom: 70px;
+        text-align: center;
+        color: #284157;
+        font-family: "Geometria Bold", sans-serif;
+        font-size: 30px;
+    }
+    &__header {
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    &__header-tab {
+        padding: 13px 14px;
+        border: 2px solid transparent;
+        margin-right: 40px;
+        color: #2a4258;
+        font-family: 'Geometria Medium', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: .3s linear;
+        &:hover {
+            border-radius: 5px;
+            border-color: #41596b;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.active {
+    border: 2px solid #2a4258;
+}
+
+
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 50px 0px;
+        &__title {
+            padding-bottom: 60px;
+            font-size: 28px;
+        }
+        &__header-tab {
+            padding: 3px 4px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
