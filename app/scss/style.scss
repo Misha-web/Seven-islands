@@ -1,31 +1,20 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-@import "blocks/header";
-@import "blocks/intro";
-@import "blocks/project";
-@import "blocks/slider";
-@import "blocks/skills";
-@import "blocks/assurance";
-@import "blocks/materials";
-@import "blocks/about";
-@import "blocks/employee";
-@import "blocks/questions";
-@import "blocks/consultation";
-@import "blocks/footer";
+@import "blocks/_header.scss";
+@import "blocks/_intro.scss";
 
 body {
-    font-family: 'Geometria Regular', sans-serif;
+    font-family: 'Circe Regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #001e28;
 }
 
 *,
 *:before,
 *:after  {
     box-sizing: border-box;
-    outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #001e28;
+}
 
 ul, ol {
     padding: 0;
@@ -46,8 +39,6 @@ button {
     border: none;
 }
 
-
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -55,14 +46,12 @@ button {
     margin: 0 auto;
 }
 
-
-
 .button {
-    border-radius: 5px;
     color: #ffffff;
-    font-family: "Geometria Bold", sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.12px;
-    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 23px;
+    background-color: #ffaf02;
 }
+
 
