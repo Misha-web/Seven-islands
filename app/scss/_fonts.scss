@@ -1,4 +1,42 @@
 @font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jnxexs');
+  src:  url('../fonts/icomoon.eot?jnxexs#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jnxexs') format('truetype'),
+    url('../fonts/icomoon.woff?jnxexs') format('woff'),
+    url('../fonts/-icomoon.svg?jnxexs#icomoon') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-volume-control-phone:before {
+  content: "\f2a0";
+}
+
+
+@font-face {
 font-family: 'Circe Light';
 src: url('../fonts/Circe-Light.eot');
 src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
@@ -19,3 +57,4 @@ src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
 url('../fonts/Circe-Bold.woff') format('woff'),
 url('../fonts/Circe-Bold.ttf') format('truetype');
 }
+

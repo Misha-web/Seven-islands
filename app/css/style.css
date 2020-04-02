@@ -872,6 +872,42 @@ img.mfp-img {
 }
 
 @font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?jnxexs");
+  src: url("../fonts/icomoon.eot?jnxexs#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?jnxexs") format("truetype"), url("../fonts/icomoon.woff?jnxexs") format("woff"), url("../fonts/-icomoon.svg?jnxexs#icomoon") format("svg");
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+
+.icon-check-circle:before {
+  content: "\f058";
+}
+
+.icon-phone:before {
+  content: "\f095";
+}
+
+.icon-volume-control-phone:before {
+  content: "\f2a0";
+}
+
+@font-face {
   font-family: 'Circe Light';
   src: url("../fonts/Circe-Light.eot");
   src: url("../fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Light.woff") format("woff"), url("../fonts/Circe-Light.ttf") format("truetype");
@@ -900,6 +936,11 @@ img.mfp-img {
 }
 
 .header__item {
+  display: flex;
+  align-items: center;
+}
+
+.header__call {
   display: flex;
   align-items: center;
 }
@@ -942,17 +983,18 @@ img.mfp-img {
   .header__item {
     margin-bottom: 20px;
   }
-  .header__item:last-child {
-    margin-bottom: 0;
-  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 414px) {
   .header__button {
     padding: 15px 25px 18px 25px;
   }
+  .header__call {
+    flex-direction: column;
+  }
   .call {
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
   }
   .call__phone {
     font-size: 16px;
@@ -1097,6 +1139,255 @@ img.mfp-img {
   }
 }
 
+.section {
+  padding: 100px 0px;
+}
+
+.section__content {
+  text-align: center;
+}
+
+.section__content-title {
+  margin-bottom: 30px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section__content-subtitle {
+  font-family: 'Circe Bold', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 80px 0px;
+  }
+  .section__content-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .section__content-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0px;
+  }
+  .section__content-title {
+    font-size: 26px;
+  }
+  .section__content-subtitle {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 568px) {
+  .section__content-title {
+    font-size: 24px;
+  }
+  .section__content-subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__content-title {
+    font-size: 22px;
+  }
+}
+
+.consultation {
+  background-image: url(../img/form-bg.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: center;
+}
+
+.consultation__img {
+  display: block;
+  max-width: 60%;
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .consultation__img {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 568px) {
+  .consultation__img {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation__img {
+    margin: 20px auto;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form__input {
+  position: relative;
+  margin-right: 30px;
+}
+
+.form__input input {
+  padding: 22px 10px 22px 60px;
+  border-radius: 28px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.form__input-user:before {
+  content: '';
+  content: "\f007";
+  font-family: 'icomoon';
+  color: #999999;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.form__input-phone:before {
+  content: '';
+  content: "\f2a0";
+  font-family: 'icomoon';
+  color: #999999;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.form__button {
+  padding: 23px 43px 21px 55px;
+  font-size: 12px;
+}
+
+.form__callback {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__callback-text {
+  margin-right: 30px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.form__callback-phone {
+  display: flex;
+  align-items: center;
+}
+
+.form__callback-phone a {
+  padding-left: 15px;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.form__callback-img {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__input {
+    margin-bottom: 20px;
+  }
+  .form__input:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__callback-phone a {
+    font-size: 18px;
+  }
+  .form__input input {
+    padding: 22px 10px 22px 55px;
+  }
+}
+
+@media (max-width: 568px) {
+  .form__callback-phone a {
+    font-size: 16px;
+  }
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__input {
+    margin-right: 0;
+  }
+  .form__callback {
+    margin-top: 30px;
+  }
+  .form__callback-text {
+    margin-right: 10px;
+    line-height: 16px;
+  }
+  .form__callback-phone {
+    display: flex;
+    align-items: center;
+  }
+  .form__callback-phone a {
+    padding-left: 5px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__callback {
+    flex-direction: column;
+  }
+  .form__callback-text {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
 body {
   font-family: 'Circe Regular', sans-serif;
   font-size: 16px;
@@ -1132,6 +1423,10 @@ button {
   border: none;
 }
 
+input {
+  outline: none;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -1140,6 +1435,8 @@ button {
 }
 
 .button {
+  text-transform: uppercase;
+  font-family: 'Circe Bold';
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
