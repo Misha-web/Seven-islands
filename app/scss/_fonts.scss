@@ -22,6 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e900";
+}
+.icon-map:before {
+  content: "\e900";
+}
 .icon-user:before {
   content: "\f007";
 }
@@ -34,6 +40,10 @@
 .icon-volume-control-phone:before {
   content: "\f2a0";
 }
+.icon-user-circle-o:before {
+  content: "\f2be";
+}
+
 
 
 @font-face {
