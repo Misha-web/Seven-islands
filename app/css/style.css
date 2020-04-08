@@ -1958,6 +1958,153 @@ img.mfp-img {
   }
 }
 
+.employee__inner {
+  margin: 70px -15px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee__item {
+  padding: 0px 15px;
+}
+
+.employee__item-img {
+  max-width: 570px;
+}
+
+.employee__item-img img {
+  display: block;
+  width: 100%;
+}
+
+.employee__item-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.employee__item-subtitle {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.employee__item-text {
+  padding-left: 50px;
+  margin-bottom: 25px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.employee__item-text:last-child {
+  margin-bottom: 0;
+}
+
+.employee__item-text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: 'icomoon';
+  content: "\f058";
+  background-color: #fff;
+  color: #00c350;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.employee__title {
+  margin: 70px 0px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.employee__wrapper {
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee__about {
+  padding-bottom: 20px;
+  flex-basis: 27%;
+  display: flex;
+  align-items: center;
+}
+
+.employee__about-img {
+  display: block;
+}
+
+.employee__content {
+  margin-left: 30px;
+}
+
+.employee__content-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.employee__content-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .employee__about {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .employee__inner {
+    margin-top: 50px;
+  }
+  .employee__item {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .employee__item-img {
+    margin: 0 auto 30px;
+  }
+  .employee__item-text {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    padding-left: 0px;
+  }
+  .employee__item-text:before {
+    left: 0%;
+  }
+  .employee__item-title {
+    font-size: 20px;
+  }
+  .employee__item-subtitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .employee__title {
+    margin: 50px 0px;
+    font-size: 20px;
+  }
+  .employee__about {
+    flex-basis: 100%;
+  }
+  .employee__content {
+    margin-left: 20px;
+  }
+  .employee__content-title {
+    margin-bottom: 15px;
+  }
+}
+
 body {
   font-family: 'Circe Regular', sans-serif;
   font-size: 16px;

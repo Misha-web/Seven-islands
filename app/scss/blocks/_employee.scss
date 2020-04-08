@@ -1,0 +1,143 @@
+.employee {
+	&__inner {
+		margin: 70px -15px 0px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		padding: 0px 15px;
+	}
+	&__item-img {
+		max-width: 570px;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__item-title {
+		font-size: 22px;
+		font-weight: 700;
+	}
+	&__item-subtitle {
+		margin-top: 30px;
+		margin-bottom: 60px;
+		font-size: 17px;
+		font-weight: 300;
+	}
+	&__item-text {
+		padding-left: 50px;
+		margin-bottom: 25px;
+		position: relative;
+		font-size: 17px;
+		font-weight: 300;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			font-family: 'icomoon';
+			content: "\f058";
+			background-color: #fff;
+			color: #00c350;
+			border-radius: 50%;
+			font-size: 25px;
+		}
+	}
+	&__title {
+		margin: 70px 0px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 700;
+	}
+	&__wrapper {
+		margin-bottom: -20px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__about {
+		padding-bottom: 20px;
+		flex-basis: 27%;
+		display: flex;
+		align-items: center;
+	}
+	&__about-img {
+		display: block;
+	}
+	&__content {
+		margin-left: 30px;
+	}
+	&__content-title {
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+	&__content-subtitle {
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+@media(max-width: 1024px) {
+	.employee {
+		&__about {
+			flex-basis: 50%;
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.employee {
+		&__inner {
+			margin-top: 50px;
+		}
+		&__item {
+			text-align: center;
+			flex-basis: 100%;
+		}
+		&__item-img {
+			margin: 0 auto 30px;
+		}
+		&__item-text {
+			max-width: 200px;
+			margin: 0 auto 20px;
+			padding-left: 0px;
+			&:before {
+				left: 0%;
+			}
+		}
+		&__item-title {
+			font-size: 20px;
+		}
+		&__item-subtitle {
+			margin-top: 20px;
+			margin-bottom: 40px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.employee {
+		&__title {
+			margin: 50px 0px;
+			font-size: 20px;
+		}
+		&__about {
+			flex-basis: 100%;
+		}
+		&__content {
+			margin-left: 20px;
+		}
+		&__content-title {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+
+
