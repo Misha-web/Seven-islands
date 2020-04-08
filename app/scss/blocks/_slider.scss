@@ -1,0 +1,54 @@
+.slider {
+	position: relative;
+	margin: 0px -15px;
+	&__item {
+		padding: 0px 15px;
+	}
+	&__item-img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.slider .slick-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+	height: 40px;
+	width: 40px;
+	font-size: 0;
+	opacity: .5;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 35%;
+		transform: translateY(-35%);
+		border-top: 1px solid #000;
+		border-left: 1px solid #000;
+		height: 15px;
+		width: 15px;
+	}
+}
+
+.slider .slick-prev {
+	position: absolute;
+	top: 50%;
+	left: 4%;
+	transform: translateY(-50%);
+	&:before {
+		transform: rotate(-45deg);
+	}
+}
+
+.slider .slick-next {
+	position: absolute;
+	top: 50%;
+	right: 4%;
+	transform: translateY(-50%);
+	&:before {
+		transform: rotate(135deg);
+	}
+}
