@@ -37,8 +37,49 @@ $(document).ready(function() {
 				slidesToScroll: 1
 			}
 		}
-    ]
-});
+		]
+	});
+
+	$(".skills__slider").slick({
+		arrows: false,
+		autoplay: true,
+		infinite: true,
+		slidesToShow: 6,
+		autoplaySpeed: 1000,
+		responsive: [
+		{
+			breakpoint: 1600,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 614,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 414,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+		]
+	});
 
 });
 

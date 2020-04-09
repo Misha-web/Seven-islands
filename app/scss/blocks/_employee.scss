@@ -81,6 +81,14 @@
 	}
 }
 
+@media(min-width: 1200px) {
+	.employee {
+		&__content-subtitle {
+			max-width: 150px;
+		}
+	}
+}
+
 @media(max-width: 1024px) {
 	.employee {
 		&__about {
