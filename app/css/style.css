@@ -1019,6 +1019,7 @@ img.mfp-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f1fbf7;
 }
 
 .intro__wrapper {
@@ -1105,6 +1106,9 @@ img.mfp-img {
 }
 
 @media (max-width: 768px) {
+  .intro {
+    background-image: none;
+  }
   .intro__wrapper {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -1195,6 +1199,9 @@ img.mfp-img {
   .section__content-subtitle {
     font-size: 20px;
     line-height: 24px;
+  }
+  .section__content-subtitle span {
+    padding: 1px;
   }
 }
 
@@ -2441,6 +2448,112 @@ img.mfp-img {
   position: absolute;
   right: 0;
   transform: rotate(45deg);
+}
+
+@media (max-width: 359px) {
+  .awards .slick-arrow:after {
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__map {
+  flex-basis: 50%;
+}
+
+.footer__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__item {
+  flex-basis: 50%;
+  padding: 100px 0px 100px 100px;
+  font-size: 18px;
+}
+
+.footer__item-title {
+  margin-bottom: 70px;
+  max-width: 570px;
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer__item-suptitle {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #007ca5;
+  font-size: 15px;
+}
+
+.footer__item-text {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+
+.footer__item-mail {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .footer__map {
+    min-height: 500px;
+    flex-basis: 100%;
+  }
+  .footer__item {
+    order: -1;
+    flex-basis: 100%;
+    padding: 20px;
+  }
+  .footer__item-title {
+    margin-bottom: 50px;
+    max-width: 100%;
+    font-size: 28px;
+  }
+  .footer__item-suptitle {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .footer__item-text {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__item {
+    font-size: 16px;
+  }
+  .footer__item-title {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+  .footer__item-suptitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .footer__item-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__item-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
 }
 
 body {

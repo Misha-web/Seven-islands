@@ -4,6 +4,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #f1fbf7;
 	&__wrapper {
 		padding-top: 110px;
 		padding-bottom: 90px;
@@ -82,6 +83,7 @@
 
 @media(max-width: 768px) {
 	.intro {
+		background-image: none;
 		&__wrapper {
 			padding-top: 60px;
 			padding-bottom: 40px;
