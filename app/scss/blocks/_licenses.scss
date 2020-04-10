@@ -1,0 +1,50 @@
+.licenses {
+	&__inner {
+		margin-top: 100px;
+		margin-bottom: -30px;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		padding-bottom: 30px;
+		flex-basis: 33.33333%;
+	}
+	&__item-img {
+		margin: 0 auto 30px;
+		max-width: 250px;
+		border: 15px solid #cce9e6;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__item-text {
+		font-size: 18px;
+		font-family: 'Circe Bold';
+	}
+}
+
+@media(max-width: 991px) {
+	.licenses {
+		&__inner {
+			margin-top: 80px;
+			justify-content: center;
+		}
+		&__item {
+			flex-basis: 50%;
+		}
+	}
+}
+
+@media(max-width: 644px) {
+	.licenses {
+		&__inner {
+			margin-top: 60px;
+		}
+		&__item {
+			flex-basis: 100%;
+		}
+	}
+}
