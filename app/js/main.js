@@ -81,6 +81,26 @@ $(document).ready(function() {
 		]
 	});
 
+	$(".awards__slider").slick({
+		infinite: true,
+		slidesToShow: 3,
+		responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 2,
+				sliderToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 614,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+		]
+	});
+
 });
 
 

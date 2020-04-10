@@ -1,6 +1,6 @@
-@import "_vars";
-@import "_libs";
-@import "_fonts";
+@import "_vars.scss";
+@import "_libs.scss";
+@import "_fonts.scss";
 @import "blocks/_header.scss";
 @import "blocks/_intro.scss";
 @import "blocks/_section.scss";
@@ -15,6 +15,7 @@
 @import "blocks/_skills.scss";
 @import "blocks/_instruction.scss";
 @import "blocks/_licenses.scss";
+@import "blocks/_awards.scss";
 
 body { 
     font-family: 'Circe Regular', sans-serif;
