@@ -101,6 +101,13 @@ $(document).ready(function() {
 		]
 	});
 
+	$(".header__button").click(function(){
+		$('.popup').toggleClass('show');
+	});
+
+	$(".close").click(function(){
+		$('.popup').removeClass('show');
+	});
 });
 
 
