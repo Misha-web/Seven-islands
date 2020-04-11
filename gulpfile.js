@@ -5,10 +5,17 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     del = require('del'),
+    imagemin = require('gulp-tinypng'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('clean', async function(){
     del.sync('dist')
+});
+
+gulp.task('tinypng', function () {
+    gulp.src('app/img/*')
+        .pipe(imagemin('PdhxcMgq201RyGy1PbMFwRrmq3KVcKDg'))
+        .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('scss', function(){
